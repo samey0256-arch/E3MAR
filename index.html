@@ -140,6 +140,22 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .why-progress-track{height:4px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden;margin-top:18px;position:relative;z-index:1;}
 .why-progress-fill{height:100%;background:linear-gradient(90deg,var(--lime-dark),var(--lime));border-radius:4px;width:0%;transition:width 1.4s cubic-bezier(.16,1,.3,1);}
 
+/* ── COVERAGE MAP ── */
+.coverage-section{background:var(--dark3);position:relative;overflow:hidden;}
+.coverage-section::before{content:'';position:absolute;top:-15%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(200,224,26,.05) 0%,transparent 65%);pointer-events:none;}
+.coverage-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;position:relative;z-index:1;}
+.coverage-map-card{background:var(--dark4);border:1px solid rgba(255,255,255,.07);border-radius:24px;overflow:hidden;position:relative;height:420px;}
+.coverage-map-card iframe{width:100%;height:100%;border:0;filter:grayscale(.3) invert(.92) contrast(.85);}
+.coverage-map-badge{position:absolute;top:16px;right:16px;background:var(--dark2);border:1px solid rgba(200,224,26,.25);border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;color:var(--lime);display:flex;align-items:center;gap:8px;z-index:2;}
+.coverage-map-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite;}
+.coverage-areas h3{font-size:20px;font-weight:800;margin-bottom:18px;}
+.coverage-pills{display:flex;flex-wrap:wrap;gap:10px;}
+.coverage-pill{background:var(--dark4);border:1px solid rgba(255,255,255,.08);padding:10px 18px;border-radius:50px;font-size:13px;font-weight:600;color:var(--text);transition:all .25s;display:flex;align-items:center;gap:8px;}
+.coverage-pill:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-2px);}
+.coverage-pill svg{width:14px;height:14px;stroke:var(--lime);flex-shrink:0;}
+.coverage-note{font-size:13px;color:var(--text-muted);line-height:1.8;margin-top:20px;}
+@media(max-width:1024px){.coverage-wrap{grid-template-columns:1fr;}.coverage-map-card{height:340px;}}
+
 /* ── LIVE TICKER STRIP ── */
 .why-ticker{margin-top:36px;background:var(--dark4);border:1px solid rgba(255,255,255,.06);border-radius:50px;padding:6px;display:flex;align-items:center;position:relative;z-index:1;overflow:hidden;}
 .why-ticker-track{display:flex;align-items:center;gap:48px;animation:tickerScroll 22s linear infinite;white-space:nowrap;}
@@ -229,6 +245,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   .why-ticker-track{animation-duration:14s;}
   .book-card{padding:28px 20px;}
   .book-row{grid-template-columns:1fr;}
+  .coverage-map-card{height:280px;}
 }
 </style>
 </head>
@@ -428,6 +445,42 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- COVERAGE MAP -->
+<section class="section coverage-section" id="coverage">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">نطاق الخدمة</div>
+      <h2 class="section-title">نغطي كل أحياء الرياض</h2>
+      <p class="section-sub">فريقنا الفني جاهز يوصلك أينما كنت في الرياض خلال نفس اليوم.</p>
+    </div>
+
+    <div class="coverage-wrap reveal">
+      <div class="coverage-map-card">
+        <div class="coverage-map-badge"><span class="dot"></span> متاح الآن في الرياض</div>
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463128.0!2d46.5!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c66958f61!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sar!2ssa!4v1700000000000"
+          allowfullscreen></iframe>
+      </div>
+      <div class="coverage-areas">
+        <h3>الأحياء اللي بنوصلها</h3>
+        <div class="coverage-pills">
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> النرجس</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> الملقا</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> العقيق</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> الياسمين</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> الربيع</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> حطين</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> الملز</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> الدرعية</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> الشفا</span>
+          <span class="coverage-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> غرناطة</span>
+        </div>
+        <p class="coverage-note">مش لاقي حيك في القائمة؟ تواصل معنا وهنأكد التغطية فورًا — في الأغلب بنوصل لكل أنحاء الرياض الكبرى.</p>
+      </div>
+    </div>
   </div>
 </section>
 
