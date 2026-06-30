@@ -55,23 +55,11 @@ nav a.active{color:var(--lime);}
 .mobile-nav.open{display:flex;}
 
 /* PAGE HERO */
-.page-hero{padding:130px 0 72px;position:relative;overflow:hidden;text-align:center;}
+.page-hero{padding:120px 0 28px;position:relative;overflow:hidden;text-align:center;}
 .page-hero::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(200,224,26,.05) 0%,transparent 65%);pointer-events:none;}
-.page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,224,26,.15),transparent);}
 .page-hero .container{position:relative;z-index:1;}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.15em;color:var(--lime);text-transform:uppercase;margin-bottom:20px;}
-.eyebrow::before,.eyebrow::after{content:'';width:28px;height:1px;background:var(--lime);opacity:.5;}
-.page-hero h1{font-size:clamp(38px,5.5vw,66px);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:18px;}
+.page-hero h1{font-size:clamp(28px,4vw,40px);font-weight:900;line-height:1.1;letter-spacing:-.02em;}
 .page-hero h1 em{font-style:normal;color:var(--lime);}
-.page-hero p{font-size:16px;color:var(--text-muted);max-width:480px;margin:0 auto;}
-
-/* FILTER BAR */
-.filter-bar{padding:32px 0 48px;position:sticky;top:72px;z-index:50;background:var(--dark);}
-.filter-bar::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);}
-.filter-wrap{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;}
-.filter-btn{background:transparent;border:1px solid rgba(255,255,255,.08);color:var(--text-muted);font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;padding:9px 20px;border-radius:50px;cursor:pointer;transition:all .2s;}
-.filter-btn:hover{border-color:rgba(200,224,26,.3);color:var(--white);}
-.filter-btn.active{background:var(--lime);border-color:var(--lime);color:var(--dark);}
 
 /* SERVICES GRID */
 .services-section{padding:0 0 100px;}
@@ -99,14 +87,14 @@ nav a.active{color:var(--lime);}
 
 /* ── MOBILE GRID ── */
 @media(max-width:768px){
-  .grid{grid-template-columns:1fr 1fr;gap:8px;padding:0 12px;}
-  .srv-card{aspect-ratio:4/3;border-radius:12px;}
-  .srv-card.featured{grid-column:span 2;aspect-ratio:16/7;border-radius:14px;}
-  .srv-body{padding:14px 16px;transform:translateY(0);}
-  .srv-tag{font-size:9px;padding:2px 8px;margin-bottom:5px;}
-  .srv-body h3{font-size:13px;margin-bottom:0;}
-  .srv-body p{display:none;}
-  .srv-link{font-size:11px;margin-top:6px;}
+  .grid{grid-template-columns:1fr;gap:12px;padding:0 16px;}
+  .srv-card{aspect-ratio:16/10;border-radius:14px;}
+  .srv-card.featured{grid-column:span 1;aspect-ratio:16/10;border-radius:14px;}
+  .srv-body{padding:18px 18px;transform:translateY(0);}
+  .srv-tag{font-size:9px;padding:2px 8px;margin-bottom:6px;}
+  .srv-body h3{font-size:16px;margin-bottom:4px;}
+  .srv-body p{display:block;opacity:1;font-size:12.5px;}
+  .srv-link{font-size:12px;margin-top:6px;}
   .services-section{padding:0 0 60px;}
 }
 
@@ -167,20 +155,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="container">
-    <div class="eyebrow">خدماتنا</div>
-    <h1>كل ما يحتاجه منزلك<br><em>في مكان واحد</em></h1>
-    <p>٥ خدمات منزلية احترافية تغطي كل احتياجاتك — من كشف التسريبات حتى صيانة وترميم المباني.</p>
-  </div>
-</div>
-
-<!-- FILTER BAR -->
-<div class="filter-bar">
-  <div class="container">
-    <div class="filter-wrap">
-      <button class="filter-btn active" onclick="filterCards('all',this)">الكل</button>
-      <button class="filter-btn" onclick="filterCards('water',this)">المياه والخزانات</button>
-      <button class="filter-btn" onclick="filterCards('building',this)">المباني</button>
-    </div>
+    <h1>خدماتنا <em>الاحترافية</em></h1>
   </div>
 </div>
 
@@ -303,24 +278,6 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <script>
 function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
 function closeMenu(){document.getElementById('mobileNav').classList.remove('open');}
-
-function filterCards(cat, btn){
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const cards = document.querySelectorAll('.srv-card');
-  cards.forEach(c=>{
-    if(cat==='all'||c.dataset.cat===cat){
-      c.style.display='';
-      setTimeout(()=>c.classList.add('visible'),50);
-    } else {
-      c.style.display='none';
-    }
-  });
-  // first visible card becomes featured
-  const visible = [...cards].filter(c=>c.style.display!=='none');
-  cards.forEach(c=>c.classList.remove('featured'));
-  if(visible.length>0) visible[0].classList.add('featured');
-}
 
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
