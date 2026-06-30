@@ -56,15 +56,11 @@ nav a.active{color:var(--lime);}nav a.active::after{width:100%;}
 .mobile-nav.open{display:flex;}
 
 /* ── HERO ── */
-.faq-hero{padding:140px 0 80px;text-align:center;position:relative;overflow:hidden;}
+.faq-hero{padding:120px 0 28px;text-align:center;position:relative;overflow:hidden;}
 .faq-hero::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(200,224,26,.06) 0%,transparent 65%);pointer-events:none;z-index:0;}
-.faq-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,224,26,.2),transparent);}
 .faq-hero .container{position:relative;z-index:1;}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.15em;color:var(--lime);text-transform:uppercase;margin-bottom:24px;}
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';width:32px;height:1px;background:var(--lime);opacity:.5;}
-.faq-hero h1{font-size:clamp(40px,6vw,72px);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px;}
+.faq-hero h1{font-size:clamp(28px,4vw,40px);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:28px;}
 .faq-hero h1 em{font-style:normal;color:var(--lime);}
-.faq-hero p{font-size:16px;color:var(--text-muted);max-width:500px;margin:0 auto 48px;line-height:1.9;}
 
 /* ── CATEGORY FILTER TABS ── */
 .filter-wrap{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:64px;}
@@ -203,9 +199,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:60p
 <!-- HERO -->
 <div class="faq-hero">
   <div class="container">
-    <div class="hero-eyebrow">الأسئلة الشائعة</div>
-    <h1>كل ما تريد معرفته<br><em>في مكان واحد</em></h1>
-    <p>٢٠ سؤالاً وجواباً تغطي كل جوانب خدماتنا من كشف التسريبات وحتى صيانة المباني.</p>
+    <h1>الأسئلة <em>الشائعة</em></h1>
     <!-- FILTER TABS -->
     <div class="filter-wrap">
       <button class="filter-btn active" onclick="filterGroup('all',this)">الكل</button>
