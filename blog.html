@@ -50,16 +50,9 @@ nav a.active::after{width:100%;}
 .mobile-nav.open{display:flex;}
 
 /* PAGE HERO */
-.page-hero{padding:140px 5% 80px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;}
+.page-hero{padding:120px 5% 28px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;text-align:center;}
 .page-hero::before{content:'';position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(200,224,26,0.05) 0%,transparent 65%);pointer-events:none;}
-.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:20px;}
-.breadcrumb a{color:var(--text-dim);transition:color 0.2s;}
-.breadcrumb a:hover{color:var(--lime);}
-.breadcrumb span{color:var(--text-dim);}
-.section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.15em;color:var(--lime);text-transform:uppercase;margin-bottom:16px;}
-.section-label::before{content:'';width:24px;height:2px;background:var(--lime);}
-.page-hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;line-height:1.15;margin-bottom:16px;}
-.page-hero p{font-size:17px;color:var(--text-muted);max-width:520px;line-height:1.8;}
+.page-hero h1{font-size:clamp(28px,4vw,40px);font-weight:900;line-height:1.1;position:relative;z-index:1;}
 
 
 /* BLOG CARDS — naqaa-style */
@@ -157,14 +150,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 </div>
 
 <div class="page-hero">
-  <div class="breadcrumb">
-    <a href="/">الرئيسية</a>
-    <span>›</span>
-    <span>المدونة</span>
-  </div>
-  <div class="section-label">المدونة</div>
-  <h1>نصائح وأسرار<br><span style="color:var(--lime)">الصيانة والخدمات المنزلية</span></h1>
-  <p>مقالات متخصصة من خبراء شركة إعمار المنزل للخدمات المنزلية — دليلك لمنزل أكثر أماناً ومتانة.</p>
+  <h1>المدونة</h1>
 </div>
 
 <div class="blog-container">
