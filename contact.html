@@ -14,9 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>اتصل بنا | شركة إعمار المنزل للخدمات المنزلية الرياض</title>
 <meta name="description" content="تواصل مع شركة إعمار المنزل للخدمات المنزلية في الرياض — واتساب، هاتف، أو أترك رسالة وسنرد عليك في أقل من ساعة.">
-<link rel="canonical" href="https://www.emaar-house.com/contact">
+<link rel="canonical" href="https://www.emmar-house.com/contact">
 <meta property="og:title" content="اتصل بنا | شركة إعمار المنزل للخدمات المنزلية">
-<meta property="og:url" content="https://www.emaar-house.com/contact">
+<meta property="og:url" content="https://www.emmar-house.com/contact">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
   "name": "شركة إعمار المنزل للخدمات المنزلية",
   "telephone": "+966504345643",
   "address": {"@type": "PostalAddress", "addressLocality": "الرياض", "addressCountry": "SA"},
-  "url": "https://emaar-house.com",
+  "url": "https://emmar-house.com",
   "openingHours": "Mo-Su 00:00-23:59",
   "areaServed": "الرياض"
 }
@@ -59,45 +59,31 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .mobile-nav.open{display:flex;}
 
 /* PAGE HERO */
-.page-hero{padding:130px 5% 72px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;text-align:center;}
+.page-hero{padding:120px 5% 28px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;text-align:center;}
 .page-hero::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(200,224,26,0.06) 0%,transparent 65%);pointer-events:none;}
-.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:20px;justify-content:center;}
-.breadcrumb a:hover{color:var(--lime);}
-.section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.15em;color:var(--lime);text-transform:uppercase;margin-bottom:16px;justify-content:center;}
-.section-label::before{content:'';width:24px;height:2px;background:var(--lime);}
-.page-hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;line-height:1.15;margin-bottom:12px;}
+.page-hero h1{font-size:clamp(28px,4vw,40px);font-weight:900;line-height:1.1;margin-bottom:8px;position:relative;z-index:1;}
 .page-hero h1 em{font-style:normal;color:var(--lime);}
-.page-hero p{font-size:17px;color:var(--text-muted);max-width:480px;margin:0 auto;line-height:1.8;}
+.page-hero p{font-size:15px;color:var(--text-muted);position:relative;z-index:1;}
 
 /* CONTACT CHANNELS */
-.channels{padding:64px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
-.channel-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:32px 28px;text-align:center;transition:border-color 0.3s,transform 0.3s;cursor:pointer;}
+.channels{padding:40px 5% 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto;}
+.channel-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:28px 20px;text-align:center;transition:border-color 0.3s,transform 0.3s;cursor:pointer;display:flex;flex-direction:column;align-items:center;}
 .channel-card:hover{border-color:rgba(200,224,26,0.3);transform:translateY(-4px);}
 .channel-card.wa{border-color:rgba(37,211,102,0.2);}
 .channel-card.wa:hover{border-color:rgba(37,211,102,0.5);}
-.ch-icon{font-size:44px;margin-bottom:16px;}
-.ch-label{font-size:12px;font-weight:700;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;margin-bottom:8px;}
-.ch-value{font-size:18px;font-weight:700;color:var(--white);margin-bottom:6px;}
-.ch-note{font-size:12px;color:var(--text-dim);}
-.ch-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;padding:10px 24px;border-radius:50px;transition:all 0.2s;width:100%;}
+.ch-icon{width:52px;height:52px;border-radius:14px;background:rgba(200,224,26,0.08);border:1px solid rgba(200,224,26,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+.ch-icon.wa-icon{background:rgba(37,211,102,0.08);border-color:rgba(37,211,102,0.2);}
+.ch-label{font-size:11px;font-weight:700;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;margin-bottom:6px;}
+.ch-value{font-size:16px;font-weight:700;color:var(--white);margin-bottom:5px;}
+.ch-note{font-size:12px;color:var(--text-dim);line-height:1.5;}
+.ch-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;padding:9px 20px;border-radius:50px;transition:all 0.2s;width:100%;}
 .ch-btn.wa-btn{background:#25d366;color:#fff;}
 .ch-btn.wa-btn:hover{background:#1eb857;}
 .ch-btn.outline{background:transparent;border:1.5px solid rgba(200,224,26,0.3);color:var(--lime);}
 .ch-btn.outline:hover{background:rgba(200,224,26,0.08);}
 
 /* FORM SECTION */
-.form-section{padding:0 5% 100px;}
-.form-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start;}
-.form-info{position:sticky;top:100px;}
-.form-info h2{font-size:clamp(26px,3vw,36px);font-weight:800;line-height:1.25;margin-bottom:16px;}
-.form-info p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:32px;}
-.info-list{display:flex;flex-direction:column;gap:20px;}
-.info-item{display:flex;gap:16px;align-items:flex-start;}
-.info-icon{width:44px;height:44px;flex-shrink:0;background:rgba(200,224,26,0.08);border:1px solid rgba(200,224,26,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;}
-.info-item h4{font-size:14px;font-weight:700;margin-bottom:3px;}
-.info-item p{font-size:13px;color:var(--text-muted);margin:0;}
-.response-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,224,26,0.08);border:1px solid rgba(200,224,26,0.2);color:var(--lime);font-size:13px;font-weight:600;padding:8px 16px;border-radius:50px;margin-top:24px;}
-.response-badge::before{content:'';width:7px;height:7px;background:var(--lime);border-radius:50%;animation:pulse 2s infinite;}
+.form-section{padding:32px 5% 80px;max-width:1200px;margin:0 auto;}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.8)}}
 
 /* FORM */
@@ -109,15 +95,25 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .field input,.field textarea,.field select{background:var(--dark3);border:1px solid rgba(255,255,255,0.08);color:var(--text);font-family:'Cairo',sans-serif;font-size:14px;padding:13px 18px;border-radius:var(--radius-sm);outline:none;transition:border-color 0.2s;width:100%;}
 .field input:focus,.field textarea:focus,.field select:focus{border-color:rgba(200,224,26,0.4);background:var(--dark4);}
 .field input::placeholder,.field textarea::placeholder{color:var(--text-dim);}
+.field input.error,.field select.error{border-color:rgba(255,80,80,0.5);}
+.field-hint{font-size:11.5px;color:#ff5050;margin-top:4px;display:none;}
+.field-hint.show{display:block;}
 .field textarea{resize:vertical;min-height:120px;}
 .field select option{background:var(--dark3);}
+.response-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,224,26,0.07);border:1px solid rgba(200,224,26,0.18);color:var(--lime);font-size:13px;font-weight:600;padding:10px 18px;border-radius:50px;margin-bottom:16px;width:100%;justify-content:center;}
+.response-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite;flex-shrink:0;}
 .submit-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--lime);color:var(--dark);font-family:'Cairo',sans-serif;font-size:16px;font-weight:700;padding:16px 32px;border-radius:50px;border:none;cursor:pointer;width:100%;transition:all 0.2s;margin-top:8px;}
 .submit-btn:hover{background:var(--lime-dark);transform:translateY(-2px);}
 .submit-btn:disabled{opacity:0.6;cursor:not-allowed;transform:none;}
 .form-note{font-size:12px;color:var(--text-dim);text-align:center;margin-top:12px;}
+.form-fallback{text-align:center;margin-top:20px;font-size:13px;color:var(--text-dim);}
+.form-fallback a{color:var(--lime);font-weight:600;}
 .success-msg{display:none;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.3);border-radius:var(--radius-sm);padding:20px;text-align:center;margin-top:16px;}
 .success-msg.show{display:block;}
 .success-msg p{color:#25d366;font-size:15px;font-weight:600;}
+/* WA card glow */
+.channel-card.wa:hover{box-shadow:0 0 28px rgba(37,211,102,0.15);}
+
 
 /* ── FOOTER ── */
 footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40px 0 28px;}
@@ -131,7 +127,14 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 .footer-links a:hover{color:var(--lime);}
 .footer-links .sep{color:rgba(255,255,255,.15);font-size:11px;}
 .footer-bottom{font-size:12px;color:var(--text-dim);border-top:1px solid rgba(255,255,255,.04);padding-top:16px;margin-top:16px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;}
-@media(max-width:768px){nav{display:none;}.hamburger{display:flex;}}
+@media(max-width:1024px){.channels{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:768px){
+  nav{display:none;}.hamburger{display:flex;}
+  .channels{grid-template-columns:repeat(2,1fr);padding:32px 16px 0;}
+  .form-section{padding:24px 16px 60px;}
+  .contact-form{padding:24px 16px;}
+  .form-row{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -164,39 +167,43 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
 <!-- HERO -->
 <div class="page-hero">
-  <div class="breadcrumb">
-    <a href="/">الرئيسية</a> › <span>اتصل بنا</span>
-  </div>
-  <div class="section-label">تواصل معنا</div>
-  <h1>نحن هنا <em>لخدمتك</em></h1>
-  <p>تواصل معنا بأي طريقة تناسبك — سنرد عليك في أقل من ساعة.</p>
+  <h1>تواصل <em>معنا</em></h1>
+  <p>نحن هنا لخدمتك</p>
 </div>
 
 <!-- CHANNELS -->
 <div class="channels">
-  <a href="https://wa.me/966504345643" class="channel-card wa">
-    <div class="ch-icon">💬</div>
+  <a href="https://wa.me/966504345643?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" class="channel-card wa">
+    <div class="ch-icon wa-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
     <div class="ch-label">واتساب</div>
-    <div class="ch-value">966504345643+</div>
+    <div class="ch-value">0504345643</div>
     <div class="ch-note">متاح 24/7 — الأسرع استجابةً</div>
     <span class="ch-btn wa-btn">تواصل الآن</span>
   </a>
   <a href="tel:+966504345643" class="channel-card">
-    <div class="ch-icon">📞</div>
+    <div class="ch-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    </div>
     <div class="ch-label">هاتف</div>
-    <div class="ch-value">966504345643+</div>
+    <div class="ch-value">0504345643</div>
     <div class="ch-note">السبت – الخميس، ٨ص – ١٠م</div>
     <span class="ch-btn outline">اتصل بنا</span>
   </a>
   <div class="channel-card">
-    <div class="ch-icon">⏰</div>
+    <div class="ch-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </div>
     <div class="ch-label">أوقات العمل</div>
-    <div class="ch-value">٢٤ ساعة / ٧ أيام</div>
-    <div class="ch-note">واتساب متاح دائماً — الهاتف ٨ص–١٠م</div>
-    <span class="ch-btn outline" onclick="document.getElementById('formSection').scrollIntoView({behavior:'smooth'})">أترك رسالة</span>
+    <div class="ch-value">٢٤ / ٧</div>
+    <div class="ch-note">واتساب دائماً — هاتف ٨ص–١٠م</div>
+    <span class="ch-btn outline" onclick="document.getElementById('formSection').scrollIntoView({behavior:'smooth'})">اترك رسالة</span>
   </div>
   <div class="channel-card">
-    <div class="ch-icon">📍</div>
+    <div class="ch-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    </div>
     <div class="ch-label">منطقة الخدمة</div>
     <div class="ch-value">الرياض</div>
     <div class="ch-note">نغطي جميع أحياء الرياض</div>
@@ -206,39 +213,20 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
 <!-- FORM -->
 <div class="form-section" id="formSection">
-  <div class="form-wrap">
-    <div class="form-info">
-      <div class="section-label">أترك رسالة</div>
-      <h2>أخبرنا بما تحتاجه</h2>
-      <p>اترك بياناتك واحتياجك وسيتواصل معك أحد مشرفينا في أقل من ساعة لتحديد موعد مناسب وتقديم سعر مخصص لك.</p>
-      <div class="info-list">
-        <div class="info-item">
-          <div class="info-icon">🗺️</div>
-          <div><h4>تغطية كاملة</h4><p>نخدم جميع أحياء الرياض بدون استثناء</p></div>
-        </div>
-        <div class="info-item">
-          <div class="info-icon">💰</div>
-          <div><h4>معاينة مجانية</h4><p>نزورك ونقيّم العمل بدون أي التزام</p></div>
-        </div>
-        <div class="info-item">
-          <div class="info-icon">📋</div>
-          <div><h4>سعر مخصص</h4><p>السعر يُحدد حسب المساحة والاحتياج الفعلي</p></div>
-        </div>
+  <div class="contact-form">
+    <div class="form-row">
+      <div class="field">
+        <label>الاسم الكريم <span>*</span></label>
+        <input type="text" id="fname" placeholder="اسمك الكريم" required>
+        <span class="field-hint" id="fname-hint">يرجى إدخال اسمك</span>
       </div>
-      <div class="response-badge">متوسط الرد: أقل من ساعة</div>
+      <div class="field">
+        <label>رقم الجوال <span>*</span></label>
+        <input type="tel" id="fphone" placeholder="05XXXXXXXX" required>
+        <span class="field-hint" id="fphone-hint">يرجى إدخال رقم جوال صحيح (05XXXXXXXX)</span>
+      </div>
     </div>
-
-    <div class="contact-form">
-      <div class="form-row">
-        <div class="field">
-          <label>الاسم الكريم <span>*</span></label>
-          <input type="text" id="fname" placeholder="اسمك الكريم" required>
-        </div>
-        <div class="field">
-          <label>رقم الجوال <span>*</span></label>
-          <input type="tel" id="fphone" placeholder="05XXXXXXXX" required>
-        </div>
-      </div>
+    <div class="form-row">
       <div class="field">
         <label>الخدمة المطلوبة <span>*</span></label>
         <select id="fservice">
@@ -250,35 +238,26 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
           <option>صيانة وترميم المباني</option>
           <option>أكثر من خدمة</option>
         </select>
-      </div>
-      <div class="form-row">
-        <div class="field">
-          <label>الحي / المنطقة</label>
-          <input type="text" id="farea" placeholder="مثال: النرجس، العليا">
-        </div>
-        <div class="field">
-          <label>الوقت المفضل للتواصل</label>
-          <select id="ftime">
-            <option value="" disabled selected>اختر</option>
-            <option>صباحاً (٨ص – ١٢م)</option>
-            <option>ظهراً (١٢م – ٤م)</option>
-            <option>مساءً (٤م – ٨م)</option>
-            <option>أي وقت</option>
-          </select>
-        </div>
+        <span class="field-hint" id="fservice-hint">يرجى اختيار الخدمة المطلوبة</span>
       </div>
       <div class="field">
-        <label>تفاصيل إضافية</label>
-        <textarea id="fmsg" placeholder="أخبرنا أكثر عن احتياجك — المساحة، عدد الغرف، أي ملاحظات..."></textarea>
+        <label>الحي / المنطقة</label>
+        <input type="text" id="farea" placeholder="مثال: النرجس، العليا">
       </div>
-      <button class="submit-btn" onclick="submitForm()" id="submitBtn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-        أرسل الرسالة
-      </button>
-      <p class="form-note">بإرسال الرسالة توافق على تواصلنا معك لخدمتك</p>
-      <div class="success-msg" id="successMsg">
-        <p>✅ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.</p>
-      </div>
+    </div>
+    <div class="field">
+      <label>تفاصيل إضافية</label>
+      <textarea id="fmsg" placeholder="أخبرنا أكثر عن احتياجك — المساحة، عدد الغرف، أي ملاحظات..."></textarea>
+    </div>
+    <div class="response-badge"><span class="dot"></span> متوسط الرد أقل من ساعة</div>
+    <button class="submit-btn" onclick="submitForm()" id="submitBtn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      أرسل عبر واتساب
+    </button>
+    <p class="form-note">بإرسال الرسالة توافق على تواصلنا معك لخدمتك</p>
+    <div class="form-fallback">أو تواصل معنا مباشرة: <a href="tel:+966504345643">0504345643</a></div>
+    <div class="success-msg" id="successMsg">
+      <p>✅ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.</p>
     </div>
   </div>
 </div>
@@ -314,18 +293,45 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <script>
 function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
 function closeMenu(){document.getElementById('mobileNav').classList.remove('open');}
+
+function clearErrors(){
+  ['fname','fphone','fservice'].forEach(id=>{
+    document.getElementById(id).classList.remove('error');
+    document.getElementById(id+'-hint').classList.remove('show');
+  });
+}
+
 function submitForm(){
+  clearErrors();
   const name=document.getElementById('fname').value.trim();
   const phone=document.getElementById('fphone').value.trim();
   const service=document.getElementById('fservice').value;
-  if(!name||!phone||!service){alert('يرجى ملء الحقول المطلوبة (الاسم، الجوال، الخدمة)');return;}
+  let valid=true;
+
+  if(!name){
+    document.getElementById('fname').classList.add('error');
+    document.getElementById('fname-hint').classList.add('show');
+    valid=false;
+  }
+  const phoneRegex=/^05\d{8}$/;
+  if(!phoneRegex.test(phone)){
+    document.getElementById('fphone').classList.add('error');
+    document.getElementById('fphone-hint').classList.add('show');
+    valid=false;
+  }
+  if(!service){
+    document.getElementById('fservice').classList.add('error');
+    document.getElementById('fservice-hint').classList.add('show');
+    valid=false;
+  }
+  if(!valid) return;
+
   const btn=document.getElementById('submitBtn');
   btn.disabled=true;
   btn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> جاري الإرسال...';
   setTimeout(()=>{
     document.getElementById('successMsg').classList.add('show');
     btn.style.display='none';
-    // Redirect to WhatsApp with pre-filled message
     const area=document.getElementById('farea').value||'غير محدد';
     const msg=document.getElementById('fmsg').value||'';
     const waMsg=encodeURIComponent(`السلام عليكم،\nاسمي: ${name}\nالجوال: ${phone}\nالخدمة المطلوبة: ${service}\nالحي: ${area}\n${msg?'ملاحظات: '+msg:''}`);

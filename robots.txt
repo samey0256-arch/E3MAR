@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.emaar-house.com/sitemap.xml
+Sitemap: https://www.emmar-house.com/sitemap.xml

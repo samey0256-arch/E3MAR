@@ -4,8 +4,8 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "emaar-house.com" }],
-      "destination": "https://www.emaar-house.com/$1",
+      "has": [{ "type": "host", "value": "emmar-house.com" }],
+      "destination": "https://www.emmar-house.com/$1",
       "permanent": true
     }
   ],
