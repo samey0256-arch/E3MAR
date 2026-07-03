@@ -18,6 +18,7 @@
 <meta property="og:title" content="شركة إعمار المنزل للخدمات المنزلية | الرياض">
 <meta property="og:description" content="كشف تسريبات المياه، عزل الخزانات، عزل الأسطح، فحص المنازل والفلل، وصيانة وترميم المباني في الرياض">
 <meta property="og:url" content="https://www.emmar-house.com/">
+<meta property="og:image" content="https://www.emmar-house.com/hero-bg.jpg">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"شركة إعمار المنزل للخدمات المنزلية","url":"https://emmar-house.com","telephone":"+966504345643","address":{"@type":"PostalAddress","addressLocality":"الرياض","addressCountry":"SA"},"areaServed":"الرياض","openingHours":"Mo-Su 00:00-23:59"}
@@ -256,7 +257,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <div class="logo-wrap"><a href="/"><img src="logo.svg" alt="إعمار المنزل"></a></div>
+    <div class="logo-wrap"><a href="/"><img loading="lazy" src="logo.svg" alt="إعمار المنزل"></a></div>
     <nav>
       <a href="/services">الخدمات</a>
       <a href="/faq">الأسئلة الشائعة</a>
@@ -279,7 +280,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg">
-    <img class="hero-bg-img" src="hero-bg.jpg" alt="شركة إعمار المنزل للخدمات المنزلية">
+    <img loading="lazy" class="hero-bg-img" src="hero-bg.jpg" alt="شركة إعمار المنزل للخدمات المنزلية">
     <div class="hero-bg-overlay"></div>
   </div>
   <div class="hero-noise"></div>
@@ -518,7 +519,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <footer>
   <div class="footer-inner">
     <div class="footer-cr-logo">
-      <img src="cr-logo.png" alt="شعار السجل التجاري" onerror="this.style.display='none'">
+      <img loading="lazy" src="cr-logo.png" alt="شعار السجل التجاري" onerror="this.style.display='none'">
     </div>
     <div class="footer-cr-info">
       <span>سجل تجاري رقم : 7050798722</span>
@@ -649,7 +650,7 @@ whyCards.forEach(card=>{
     const service = serviceSelect.value;
     const notes = notesInput.value.trim();
 
-    let message = `مرحباً، أنا ${name} 👋\nأرغب في حجز خدمة: *${service}*\nرقم الجوال: ${phone}`;
+    let message = `مرحباً، أنا ${name} \nأرغب في حجز خدمة: *${service}*\nرقم الجوال: ${phone}`;
     if(notes){
       message += `\nملاحظات: ${notes}`;
     }
