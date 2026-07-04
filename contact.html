@@ -140,6 +140,17 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   90%{transform:scale(1.05) rotate(3deg);}
   92%,100%{transform:scale(1) rotate(0deg);}
 }
+
+/* DEVELOPER CREDIT BADGE */
+.credit-line{margin-top:18px;display:flex;justify-content:center;}
+.credit-badge{display:inline-flex;align-items:center;gap:7px;padding:8px 18px;border-radius:50px;background:linear-gradient(90deg,rgba(200,224,26,.05),rgba(200,224,26,.12),rgba(200,224,26,.05));background-size:200% auto;border:1px solid rgba(200,224,26,.18);font-size:12px;color:var(--text-dim);transition:all .35s ease;animation:creditShimmerBg 5s linear infinite;}
+.credit-badge:hover{border-color:rgba(200,224,26,.5);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,224,26,.18);}
+.credit-badge svg{flex-shrink:0;animation:creditSpin 6s linear infinite;}
+.credit-badge a{font-weight:800;text-decoration:none;background:linear-gradient(90deg,#c8e01a,#f3ffb0,#c8e01a);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:creditShimmerText 3s linear infinite;}
+@keyframes creditShimmerText{0%{background-position:0% center;}100%{background-position:200% center;}}
+@keyframes creditShimmerBg{0%{background-position:0% center;}100%{background-position:200% center;}}
+@keyframes creditSpin{0%,85%,100%{transform:rotate(0deg);}90%{transform:rotate(180deg);}95%{transform:rotate(360deg);}}
+
 </style>
 </head>
 <body>
@@ -288,6 +299,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
     <div class="footer-bottom">
       <span>شركة إعمار المنزل للخدمات المنزلية — جميع الحقوق محفوظة</span>
       <span><a href="/terms" style="color:var(--text-dim);text-decoration:none;">الشروط والأحكام</a> | <a href="/privacy" style="color:var(--text-dim);text-decoration:none;">سياسة الخصوصية</a></span>
+    </div>
+    <div class="credit-line">
+      <span class="credit-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="var(--lime)"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        تم تنفيذ الموقع بواسطة <a href="https://wa.me/201213816311" target="_blank" rel="noopener">Click Zodiak</a>
+      </span>
     </div>
   </div>
 </footer>
